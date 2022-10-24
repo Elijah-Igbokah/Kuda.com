@@ -1,0 +1,29 @@
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 130px;
+    padding: 40px;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        font-size: 32px;
+        line-height: 43px;
+        font-weight: 900;
+        color: #40196d;
+    }
+}
+
+// RESPONSIVE
+@media screen and (max-width: 512px){
+    .section{
+        margin: 0 5%;
+        padding: 0;
+    }
+}

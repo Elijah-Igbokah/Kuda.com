@@ -1,0 +1,24 @@
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+}
+
+.flex-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    gap: 20px;
+}
+
+// RESPONSIVE
+@media screen and (max-width: 512px){
+    .flex-container{
+        flex-direction: column;
+    }
+
+    .flex-reverse{
+        flex-direction: column;
+    }
+}

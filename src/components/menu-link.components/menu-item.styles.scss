@@ -1,0 +1,19 @@
+li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button{
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        background: inherit;
+    }    
+}
+
+.links{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    color: #40196d;
+}
