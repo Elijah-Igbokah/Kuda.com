@@ -199,8 +199,11 @@
       gap: 50px;
 
       .hero-text{
+        display: flex;
+        flex-direction: column;
         width: 100%;
         text-align: center;
+        justify-content: center;
   
         h1{
           font-size: 35px;
@@ -214,12 +217,17 @@
           display: flex;
           margin: 20px 0;
           justify-content: center;
+          width: 100%;
+          padding: 0 20px;
 
           img{
             &:nth-child(3){
               display: none;
             }
+            width: 500px;
           }
+
+          
         }
         .license{
           justify-content: center;

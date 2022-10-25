@@ -29,7 +29,7 @@ const Hero = () =>{
                 <h3>We’re here to help you get the best out of your money, no strings attached.</h3>
                 <h3>Welcome to your freedom!</h3>
                 <div className="store-icons">
-                    <img src={appStore} alt="" />
+                    <img className="store-icon" src={appStore} alt="" />
                     <img src={playStore} alt="" />
                     <img src={kudaWeb} alt="" />
                 </div>
