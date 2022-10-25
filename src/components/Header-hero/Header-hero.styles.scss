@@ -22,6 +22,18 @@
             font-size: 18px;
             line-height: 26px;
             font-weight: 600;
+
+        }
+
+        .license{
+          margin-top: 10px;
+          display: flex;
+          width: 100%;
+          gap: 20px;
+        }
+
+        &>.store-icons{
+          display: none;
         }
 
         .get-kuda-btn{
@@ -183,13 +195,13 @@
       flex-direction: column;
       padding: 0;
       padding-top: 70px ;
-      margin-bottom: 100px;
+      margin-bottom: 220px;
+      gap: 50px;
 
       .hero-text{
         width: 100%;
         text-align: center;
-    
-
+  
         h1{
           font-size: 35px;
           line-height: 47px;
@@ -198,6 +210,22 @@
         h3{
           font-size: 18px;
         }
+        &>.store-icons{
+          display: flex;
+          margin: 20px 0;
+          justify-content: center;
+
+          img{
+            &:nth-child(3){
+              display: none;
+            }
+          }
+        }
+        .license{
+          justify-content: center;
+          
+        }
+
         .get-kuda-btn{
           display: none;
         }
@@ -208,40 +236,37 @@
         // margin-top: 60px;
     }
     }
-  }
 
-  // RESPONSIVE
-@media screen and (max-width: 512px){
-  .atm-card{
-    width: 50%;
-
-    &>img{
-      width: 100%;
-    }  }
-
-  .phone{
-    width: 60%;
+    .atm-card{
+      width: 50%;
+  
+      &>img{
+        width: 100%;
+      }  }
+  
+    .phone{
+      width: 60%;
+    }
+  
+    #circle-orbit-container{
+      height: 350px;
+      width: 350px;
+    }
+  
+    #inner-orbit{
+      width: 150px;
+      height: 150px;
+    }
+  
+    .middle-orbit-icon, .outer-orbit-icon{
+      width: 30px;
+    }
+    #middle-orbit, #middle-orbit-reverse{
+      width: 250px;
+      height: 250px;
+    }
+  
+    .middle-orbit-icon{
+      top: 8px;
+    }
   }
-
-  #circle-orbit-container{
-    height: 350px;
-    width: 350px;
-  }
-
-  #inner-orbit{
-    width: 150px;
-    height: 150px;
-  }
-
-  .middle-orbit-icon, .outer-orbit-icon{
-    width: 30px;
-  }
-  #middle-orbit, #middle-orbit-reverse{
-    width: 250px;
-    height: 250px;
-  }
-
-  .middle-orbit-icon{
-    top: 8px;
-  }
-}
