@@ -62,8 +62,13 @@ function Homepage() {
       </Section>
       <Section>
         <FlexContainer>
-          <SectImage flexPosition="flex-start" image= {image6} />
+          <div className='resp-hidden'>
+            <SectImage flexPosition="flex-start" image= {image6} />
+          </div>
           <SectText width="100%" heading="Turn off access, turn on safety." desc="Life happens. Milk spills. Debit cards go missing. If that ever happens, you can block your missing card on the app so no one can use it. We’d like to see them try." link="Learn more about Cards" />
+          <div className='resp-show'>
+            <SectImage flexPosition="flex-start" image= {image6} />
+          </div>
         </FlexContainer>
       </Section>
       <Section>
@@ -74,8 +79,9 @@ function Homepage() {
       </Section>
       <Section>
         <FlexContainer>
-          <SectImage flexPosition="flex-start" image= {image5} />
+          <div className='resp-hidden'><SectImage flexPosition="flex-start" image= {image5} /></div>
           <SectText width="100%" heading="Fees as clear as glass." desc="We’re serious about free banking, and we will never, ever charge you for anything without your consent." link="See all our fees" />
+          <div className='resp-show'><SectImage flexPosition="flex-start" image= {image5} /></div>
         </FlexContainer>
       </Section>
       <div style={{margin: "120px"}}></div>

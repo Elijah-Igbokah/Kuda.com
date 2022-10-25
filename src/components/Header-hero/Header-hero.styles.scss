@@ -209,3 +209,39 @@
     }
     }
   }
+
+  // RESPONSIVE
+@media screen and (max-width: 512px){
+  .atm-card{
+    width: 50%;
+
+    &>img{
+      width: 100%;
+    }  }
+
+  .phone{
+    width: 60%;
+  }
+
+  #circle-orbit-container{
+    height: 350px;
+    width: 350px;
+  }
+
+  #inner-orbit{
+    width: 150px;
+    height: 150px;
+  }
+
+  .middle-orbit-icon, .outer-orbit-icon{
+    width: 30px;
+  }
+  #middle-orbit, #middle-orbit-reverse{
+    width: 250px;
+    height: 250px;
+  }
+
+  .middle-orbit-icon{
+    top: 8px;
+  }
+}

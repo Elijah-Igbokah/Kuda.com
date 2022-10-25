@@ -90,6 +90,7 @@
     .info-cards{
         flex-wrap: wrap;
         justify-content: left !important;
+        margin-bottom: 30px !important;
         
 
         .info-card{
@@ -97,6 +98,10 @@
                 width: 100% !important;
             }
             width: 50% !important;
+
+            &>p{
+                width: 80%;
+            }
 
             .social-icons{
                 width: 20%;

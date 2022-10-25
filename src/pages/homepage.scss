@@ -2,3 +2,18 @@ hr{
     opacity: 0.2;
     margin-top: 80px;
 }
+
+.resp-show{
+    display: none;
+}
+
+// RESPONSIVE
+@media screen and (max-width: 512px){
+    .resp-hidden{
+        display: none;
+    }
+
+    .resp-show{
+        display: block;
+    }
+}
