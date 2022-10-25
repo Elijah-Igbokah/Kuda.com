@@ -40,75 +40,76 @@ function Homepage() {
   return (
     <div className="App">
       <NavBar/>
-      <Hero/>
-      <HeaderCardContainer />
-      <Section>
-        <FlexContainer>
-          <SectText width="60%" heading="Your phone + our app + a debit card = a simpler life." desc="We designed a banking app for your busy lifestyle, and we’ll give you a free debit card to go with it. That’s all you need to make the right moves with your money, no sweat." link="Open An Account in Minutes" />
-          <SectImage flexPosition="flex-end" image= {image} />
-        </FlexContainer>
-      </Section>
-      <Section>
-        <FlexReverse>
-          <SectText width="100%" heading="It’s your money, we just help you manage it." desc="Save it, spend it, send it. It’s up to you. Whatever you choose to do with your money, we’ll make sure it’s done better and free of charge. We take responsibility for that." link="Get Help" />
-          <SectImage flexPosition="flex-start" image= {image1} />
-        </FlexReverse>
-      </Section>
-      <Section>
-        <FlexContainer>
-          <SectText width="100%" heading="Save money as you spend it, seriously." desc="You can’t avoid spending. That’s how you pay for your needs. But we can help you put money away every time you pay for something. Just set a percentage to save and watch your money grow." link="See all our Savings" />
-          <SectImage flexPosition="flex-end" image= {image2} />
-        </FlexContainer>
-      </Section>
-      <Section>
-        <FlexContainer>
-          <div className='resp-hidden'>
-            <SectImage flexPosition="flex-start" image= {image6} />
-          </div>
-          <SectText width="100%" heading="Turn off access, turn on safety." desc="Life happens. Milk spills. Debit cards go missing. If that ever happens, you can block your missing card on the app so no one can use it. We’d like to see them try." link="Learn more about Cards" />
-          <div className='resp-show'>
-            <SectImage flexPosition="flex-start" image= {image6} />
-          </div>
-        </FlexContainer>
-      </Section>
-      <Section>
-        <FlexContainer>
-          <SectText width="100%" heading="We’re always happy to help you." desc="You can chat with us on the app, slide into our DMs, tweet, leave an Instagram comment, send an email or call. However you choose to reach out, there’ll always be a friendly person there to make your life easy." link="Get Help" />
-          <SectImage flexPosition="flex-end" image= {image4} />
-        </FlexContainer>
-      </Section>
-      <Section>
-        <FlexContainer>
-          <div className='resp-hidden'><SectImage flexPosition="flex-start" image= {image5} /></div>
-          <SectText width="100%" heading="Fees as clear as glass." desc="We’re serious about free banking, and we will never, ever charge you for anything without your consent." link="See all our fees" />
-          <div className='resp-show'><SectImage flexPosition="flex-start" image= {image5} /></div>
-        </FlexContainer>
-      </Section>
-      <div style={{margin: "120px"}}></div>
-      <SectionHeading text="Don’t just take our word for it" />
-      <PartnerIcon>
-        <img src={icon1} alt="" />
-        <img src={icon2} alt="" />
-        <img src={icon3} alt="" />
-        <img src={icon4} alt="" />
-        <img src={icon5} alt="" />
-        <img src={icon6} alt="" />
-      </PartnerIcon>
-      <SectionHeading text="Our Partners" />
-      <ReversePartnerIcon>
-        <img src={icon7} alt="" />
-        <img src={icon8} alt="" />
-        <img src={icon9} alt="" />
-        <img src={icon10} alt="" />
-        <img src={icon11} alt="" />
-      </ReversePartnerIcon>
-      <hr />
-      <Section>
-        <SectionHeading text="Choose the freedom you need." />
-        <ComparisonGrid/>
-      </Section>
-      <Footer/>
-
+      <div className='main'>
+        <Hero/>
+        <HeaderCardContainer />
+        <Section>
+          <FlexContainer>
+            <SectText width="60%" heading="Your phone + our app + a debit card = a simpler life." desc="We designed a banking app for your busy lifestyle, and we’ll give you a free debit card to go with it. That’s all you need to make the right moves with your money, no sweat." link="Open An Account in Minutes" />
+            <SectImage flexPosition="flex-end" image= {image} />
+          </FlexContainer>
+        </Section>
+        <Section>
+          <FlexReverse>
+            <SectText width="100%" heading="It’s your money, we just help you manage it." desc="Save it, spend it, send it. It’s up to you. Whatever you choose to do with your money, we’ll make sure it’s done better and free of charge. We take responsibility for that." link="Get Help" />
+            <SectImage flexPosition="flex-start" image= {image1} />
+          </FlexReverse>
+        </Section>
+        <Section>
+          <FlexContainer>
+            <SectText width="100%" heading="Save money as you spend it, seriously." desc="You can’t avoid spending. That’s how you pay for your needs. But we can help you put money away every time you pay for something. Just set a percentage to save and watch your money grow." link="See all our Savings" />
+            <SectImage flexPosition="flex-end" image= {image2} />
+          </FlexContainer>
+        </Section>
+        <Section>
+          <FlexContainer>
+            <div className='resp-hidden'>
+              <SectImage flexPosition="flex-start" image= {image6} />
+            </div>
+            <SectText width="100%" heading="Turn off access, turn on safety." desc="Life happens. Milk spills. Debit cards go missing. If that ever happens, you can block your missing card on the app so no one can use it. We’d like to see them try." link="Learn more about Cards" />
+            <div className='resp-show'>
+              <SectImage flexPosition="flex-start" image= {image6} />
+            </div>
+          </FlexContainer>
+        </Section>
+        <Section>
+          <FlexContainer>
+            <SectText width="100%" heading="We’re always happy to help you." desc="You can chat with us on the app, slide into our DMs, tweet, leave an Instagram comment, send an email or call. However you choose to reach out, there’ll always be a friendly person there to make your life easy." link="Get Help" />
+            <SectImage flexPosition="flex-end" image= {image4} />
+          </FlexContainer>
+        </Section>
+        <Section>
+          <FlexContainer>
+            <div className='resp-hidden'><SectImage flexPosition="flex-start" image= {image5} /></div>
+            <SectText width="100%" heading="Fees as clear as glass." desc="We’re serious about free banking, and we will never, ever charge you for anything without your consent." link="See all our fees" />
+            <div className='resp-show'><SectImage flexPosition="flex-start" image= {image5} /></div>
+          </FlexContainer>
+        </Section>
+        <div style={{margin: "120px"}}></div>
+        <SectionHeading text="Don’t just take our word for it" />
+        <PartnerIcon>
+          <img src={icon1} alt="" />
+          <img src={icon2} alt="" />
+          <img src={icon3} alt="" />
+          <img src={icon4} alt="" />
+          <img src={icon5} alt="" />
+          <img src={icon6} alt="" />
+        </PartnerIcon>
+        <SectionHeading text="Our Partners" />
+        <ReversePartnerIcon>
+          <img src={icon7} alt="" />
+          <img src={icon8} alt="" />
+          <img src={icon9} alt="" />
+          <img src={icon10} alt="" />
+          <img src={icon11} alt="" />
+        </ReversePartnerIcon>
+        <hr />
+        <Section>
+          <SectionHeading text="Choose the freedom you need." />
+          <ComparisonGrid/>
+        </Section>
+        <Footer/>
+      </div>
     </div>
   );
 }

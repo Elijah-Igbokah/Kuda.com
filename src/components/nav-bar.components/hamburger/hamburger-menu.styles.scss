@@ -1,0 +1,51 @@
+.hamburger-link-container{
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background: white;
+    min-height: 150vh;
+    padding: 5%;
+    z-index: 100;
+
+    .hamburger-links{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        row-gap: 20px;
+
+        .hamburger-list{
+            width: 50%;
+
+            h3{
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                color: #40196d;
+                margin-bottom: 10px;
+            }
+            .hamburger-link{
+
+                & > li{
+                    margin-bottom: 10px;
+                }
+                a{
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        
+    }
+
+}
+
+.hamburger-btns{
+    margin: 20px 0;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

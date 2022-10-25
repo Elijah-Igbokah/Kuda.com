@@ -10,6 +10,7 @@ import "./nav-bar.styles.scss";
 import MenuItem from "../menu-link.components/menu-item.components";
 import GetKudaButton from "../button.components/get-kuda-btn.component";
 import Dropdown from "./dropdown/dropdown.component";
+import HamburgerMenu from "./hamburger/hamburger-menu.component";
 
 const NavBar = () =>{
     const [dropDownDisplay, setDropDownDisplay] = useState(false);
@@ -21,6 +22,8 @@ const NavBar = () =>{
     return(
         
         <nav className="nav-bar">
+            { toggleHamburger && <HamburgerMenu/>}
+            
             <div className="nav-bar-container">
                 <div className="left-side">
                     <div className="nav-logo-div">
